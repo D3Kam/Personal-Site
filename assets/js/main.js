@@ -203,3 +203,5 @@
 
 })();
 
+const element = $0;
+const image = element.querySelector('img'); 

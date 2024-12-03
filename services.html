@@ -27,7 +27,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
 </head>
 
 <body class="services-page">
@@ -39,7 +41,23 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Personal</h1>
+        
       </a>
+      <h3 id="clock"> 
+          <script>
+            function updateClock() {
+              const now = new Date();
+              const hours = String(now.getHours()).padStart(2, '0');
+              const minutes = String(now.getMinutes()).padStart(2, '0');
+              const seconds = String(now.getSeconds()).padStart(2, '0');
+              document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+            }
+            setInterval(updateClock, 1000);
+            updateClock();
+          </script>
+          
+          
+          </h3>
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -102,28 +120,28 @@
             <div class="col-lg-8">
               <h1>Service Overview</h1>
                 <video id="serviceVideo" width="640" height="360" controls>
-                  <source src="Images/Startechup Inc - Web and Software Development Agency - Promotional Video.mp4" type="video/mp4">
+                  <source src="./Images/StartechupInc-WebandSoftwareDevelopmentAgency-PromotionalVideo.mp4" type="video/mp4">
        
                   </video>
                   <br>
       
                 <button onclick="playVideo()">Play Video</button>
               </div>
-                      <div class="col-lg-8">
-                        <h1>Our another service demonstration</h1>
-                        <iframe width="640" height="360" 
-                        source="https://www.youtube.com/embed/QsY8fnvMn6c" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-      </iframe>
+              <div class="col-lg-8">
+                <h1>Our another service demonstration</h1>
+                <iframe width="640" height="360" 
+                src="https://www.youtube.com/embed/QsY8fnvMn6c" 
+                title="YouTube video player" 
+                
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
             </div>
             <div class="col-lg-8 py-4">
               <div class="py-4">
                 <h3>Service Audio Introduction</h3>
                 <audio controls>
-                  <source src="./Images/NEVER ENOUGH - Fun & Upbeat Music For Commercials.mp3" type="audio/mpeg">
+                  <source src="./Images/NEVERENOUGH-Fun&UpbeatMusicForCommercials.mp3" type="audio/mpeg">
                   
                 </audio>
               </div>
@@ -142,25 +160,71 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
+              <div>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                  <mrow>
+                    <mi>f</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>a</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <mfrac>
+                      <mn>1</mn>
+                      <mrow>
+                        <mn>2</mn>
+                        <mi>&#x3c0;</mi>
+                        <mi>i</mi>
+                      </mrow>
+                    </mfrac>
+                    <mo>&#x222e;</mo>
+                    <mfrac>
+                      <mrow>
+                        <mi>f</mi>
+                        <mo stretchy="false">(</mo>
+                        <mi>z</mi>
+                        <mo stretchy="false">)</mo>
+                      </mrow>
+                      <mrow>
+                        <mi>z</mi>
+                        <mo>&#x2212;</mo>
+                        <mi>a</mi>
+                      </mrow>
+                    </mfrac>
+                    <mi>d</mi>
+                    <mi>z</mi>
+                  </mrow>
+                </math>
+                
+                
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>Cauchy Integral Formula</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>This formula calculates the value of a holomorphic (complex differentiable) function 
+                𝑓(𝑧) at a point 𝑎 inside a closed contour ∂𝐷 in the complex plane.</p>
+                <p>Learn about more formulas with me!</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
+              <div style="    margin: 0 auto;
+              width: 64px;
+              height: 64px;
+              background: var(--accent-color);
+              border-radius: 4px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 20px;
+              transition: 0.3s;
+              transform-style: preserve-3d;">
+                <img src="./Images/basketball-svgrepo-com.svg" alt="Basketball icon" style="margin: 5px;">
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>Basketball enhancement</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Years of experience in basketball field. Improve your basketball knowledge with me!</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -238,13 +302,7 @@
         <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        
       </div>
     </div>
   </footer>

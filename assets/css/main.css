@@ -1527,3 +1527,10 @@ section,
   padding: 10px 20px; /* Optional: Adjusts size and spacing */
   cursor: pointer; /* Adds a pointer cursor on hover */
 }
+#clock {
+  font-size: 1.5em;
+  font-family: Arial, sans-serif;
+  color: #15bd20;
+  text-align: center;
+  margin-top: 20px;
+}
