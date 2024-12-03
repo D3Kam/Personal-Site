@@ -1420,9 +1420,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1534,3 +1532,21 @@ section,
   text-align: center;
   margin-top: 20px;
 }
+#submitBtn {
+  background: linear-gradient(135deg, #058d27, #07e153); /* Modern gradient background */
+  color: white; /* Text color */
+  font-size: 16px; /* Text size */
+  padding: 10px 20px; /* Padding for better size */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Make the button round */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+#submitBtn:hover {
+  background: linear-gradient(135deg, #020d20, #013b0f); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
